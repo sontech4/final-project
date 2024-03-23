@@ -1,0 +1,91 @@
+{% extends "core/base.html" %}
+
+{% block title %}About{% endblock title %}
+
+{% block css %}
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        h1 {
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .para, .mission_para, .ourstory_Para, .apart_para, .commitment_para {
+            line-height: 1.6;
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .para::first-letter,
+        .mission_para::first-letter,
+        .ourstory_Para::first-letter,
+        .apart_para::first-letter,
+        .commitment_para::first-letter {
+            font-size: 150%;
+            color: #3498db;
+            margin-right: 5px;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+{% endblock css %}
+
+{% block content %}
+
+<div class="container about">
+    <div class="heading_about">
+        <h1>About US</h1>
+    </div>
+    <div class="para">
+        Welcome to [Your Bike Store Name], A motorcycle is a two or three-wheeled motor vehicle steered by a handlebar from a saddle-style seat. Motorcycle design varies greatly to suit a range of different purposes: long-distance travel, commuting, cruising, sport, and off-road riding.
+    </div>
+    <div class="mission">
+        <h1>Our Mission</h1>
+    </div>
+    <div class="mission_para">
+        At [Your Bike Store Name], our mission is simple — to be your go-to destination for all things bike-related. Whether A bicycle, also called a pedal cycle, bike, push-bike or cycle, is a human-powered or motor-assisted
+    </div>
+    <div class="ourstory">
+        <h1>Our Story</h1>
+    </div>
+    <div class="ourstory_Para">
+        Founded in [Year], [Your Bike Store Name] started as a small family business with a big dream. Our journey began with a shared love for animals and a commitment to offering premium products and expert advice. Over the years, we've grown into a thriving community of bike lovers dedicated to providing exceptional care for our furry, feathered, and scaly friends.
+    </div>
+    <div class="commitment">
+        <h1>Our Commitment</h1>
+    </div>
+    <div class="commitment_para">
+        Suzuki offers the Gixxer in 3 colours whereas the Hero Xtreme 160R comes in 6 colours. Out of 90 user reviews, Xtreme 160R scores 4.2 whereas the Suzuki Gixxer tallies 4.2 out of 5 based on 108 user reviews.. TheSuzuki Gixxer Mileage is around 45 kmpl, while the Hero Xtreme 160R Mileage is around 55.47 kmpl.
+
+    </div>
+</div>
+
+
+{% endblock content %}
